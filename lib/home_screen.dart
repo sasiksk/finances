@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:googleapis/authorizedbuyersmarketplace/v1.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:skfinance/BackupRestorePage.dart';
 import 'package:skfinance/Backuppage.dart';
 import 'package:skfinance/Data/Databasehelper.dart';
 import 'package:skfinance/LineScreen.dart';
@@ -205,7 +206,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
               onPressed: () async {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => DownloadDBScreen()),
+                  MaterialPageRoute(builder: (context) => BackupRestorePage()),
                 );
               }),
           IconButton(

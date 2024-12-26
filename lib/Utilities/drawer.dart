@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:skfinance/BackupRestorePage.dart';
+
+import 'package:skfinance/Backuppage.dart';
 import 'package:skfinance/Data/Databasehelper.dart';
+import 'package:skfinance/Restore.dart';
 import 'package:skfinance/Utilities/Reports/CustomerReportScreen.dart';
 import 'package:skfinance/home_screen.dart';
 /*import 'package:skfinance/CollectionScreen.dart';
@@ -43,6 +47,28 @@ Widget buildDrawer(BuildContext context) {
             );
           },
         ),
+        ListTile(
+          leading: const Icon(Icons.backup),
+          title: const Text('Back Up'),
+          onTap: () {
+            //navigate to home screen
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => BackupRestorePage()),
+            );
+          },
+        ),
+        /*ListTile(
+          leading: const Icon(Icons.backup),
+          title: const Text('Restore'),
+          onTap: () {
+            //navigate to home screen
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => RestorePage()),
+            );
+          },
+        ),*/
 
         ListTile(
           leading: const Icon(Icons.picture_as_pdf),

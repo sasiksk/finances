@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "832048689701",
+    "project_id": "skfin-bf423",
+    "storage_bucket": "skfin-bf423.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832048689701:android:6ac2a52e200053adfe85cc",
+        "android_client_info": {
+          "package_name": "com.DigiThinkers.DigiVasool"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK45D5muIgXHJmGJB33UD5zYrldLMYB44"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832048689701:android:8a50ee2082651811fe85cc",
+        "android_client_info": {
+          "package_name": "com.example.svf"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK45D5muIgXHJmGJB33UD5zYrldLMYB44"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

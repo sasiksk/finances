@@ -1,11 +1,11 @@
 // filepath: /J:/SASIKUMAR/skfinance/lib/Backuppage.dart
-import 'package:path_provider/path_provider.dart';
-import 'package:file_picker/file_picker.dart';
-import 'package:flutter/material.dart';
+
+/*import 'package:flutter/material.dart';
 import 'dart:io';
 import 'package:share_plus/share_plus.dart';
+import 'package:cross_file/cross_file.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:intl/intl.dart';
+
 import 'Data/Databasehelper.dart';
 
 class DownloadDBScreen extends StatelessWidget {
@@ -27,7 +27,7 @@ class DownloadDBScreen extends StatelessWidget {
       // Notify user
 
       // Share the file
-      await Share.shareFiles([savePath], text: 'Download DB file');
+      await Share.shareXFiles([XFile(savePath)], text: 'Download DB file');
     } catch (e) {
       debugPrint('Error creating backup: $e');
       ScaffoldMessenger.of(context).showSnackBar(
@@ -49,3 +49,4 @@ class DownloadDBScreen extends StatelessWidget {
     );
   }
 }
+*/
