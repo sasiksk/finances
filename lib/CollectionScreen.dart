@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:skfinance/Data/Databasehelper.dart';
 import 'package:skfinance/PartyDetailScreen.dart';
+import 'package:skfinance/Sms.dart';
 import 'package:skfinance/Utilities/CustomDatePicker.dart';
 import 'package:skfinance/finance_provider.dart';
 import 'package:intl/intl.dart';
@@ -131,6 +132,8 @@ class CollectionScreen extends ConsumerWidget {
                                   lendingData['amtgiven'] +
                                       (lendingData['profit']);
 
+                              final int sms = lendingData['sms'];
+                              final String pno = lendingData['PartyPhnone'];
                               // Calculate the new amtCollected and dueAmt
                               final double newAmtCollected =
                                   currentAmtCollected +
@@ -200,6 +203,8 @@ class CollectionScreen extends ConsumerWidget {
                                   );
                                 });
                               }
+                              await sendSms(pno,
+                                  'Your Paid= $currentAmtCollected, Balance=${currentgivenamt - currentAmtCollected}. Thank You. Selva Vinagaya Finance.');
                             }
                             // Insert new record
                             else {
@@ -235,7 +240,8 @@ class CollectionScreen extends ConsumerWidget {
                                     lineName, collectedAmt);
 
                                 if (sms == 1) {
-                                  //await _sendSms(pno, 'Your message here');
+                                  await sendSms(pno,
+                                      'Your Paid= $collectedAmt, Balance=${currentgivenamt - collectedAmt}. Thank You. Selva Vinagaya Finance.');
                                 }
                               } else {
                                 Future.delayed(Duration.zero, () {

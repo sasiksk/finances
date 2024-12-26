@@ -22,9 +22,9 @@ class _BackupRestorePageState extends State<BackupRestorePage> {
           children: <Widget>[
             ElevatedButton(
               onPressed: () async {
-                //final dbPath = await DatabaseHelper.getDatabasePath();
+                final dbPath = await DatabaseHelper.getDatabasePath();
 
-                /* await _general.backupDatabaseToGoogleDrive(dbPath, context);*/
+                await _general.backupDatabaseToGoogleDrive(dbPath, context);
 
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
@@ -38,9 +38,9 @@ class _BackupRestorePageState extends State<BackupRestorePage> {
             ElevatedButton(
               onPressed: () async {
                 // Replace 'your_save_path' with the actual path where you want to save the restored file
-                /*String savePath = await DatabaseHelper.getDatabasePath();
+                String savePath = await DatabaseHelper.getDatabasePath();
                 await _general.restoreDatabaseFromGoogleDrive(
-                    savePath, context);*/
+                    savePath, context);
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Text('Coming Soon...'),

@@ -53,6 +53,12 @@ dependencies:
   share_plus: ^4.5.3
   cross_file: ^0.3.4+2
   flutter_secure_storage: ^8.1.0
+  mime: ^1.0.6
+  http_parser: ^4.0.2
+  archive: ^3.6.1
+  url_launcher: ^6.3.1
+
+
  
 
 dev_dependencies:
