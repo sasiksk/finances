@@ -131,7 +131,7 @@ class General {
         print('Database restored successfully to: $savePath');
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-              content: Text('Database restored successfully to: $savePath')),
+              content: Text('Databas restored successfully to: $savePath')),
         );
       } else {
         print('Failed to restore file: ${response.reasonPhrase}');
